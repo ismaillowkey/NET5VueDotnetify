@@ -37,9 +37,9 @@ namespace helloworld.ViewModel
 
         public override void Dispose() => _timer.Dispose();
 
-        public Action<bool> ButtonClicked => (args1) =>
+        public void ButtonClicked(bool args1)
         {
             ClickCount++;
-        };
+        }
     }
 }
